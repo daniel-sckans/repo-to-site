@@ -1,0 +1,51 @@
+:root {
+    box-sizing: border-box; 
+
+    font-size: calc(0.5em + 1vw); 
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    min-height: 100vh; 
+
+    font-family: Helvetica, sans-serif; 
+    background-color: #aef8; 
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+div {
+    padding: 1.5rem; 
+
+    font-size: 3rem; 
+    font-weight: 700; 
+    text-align: center; 
+    word-wrap: break-word; 
+    background-color: #aef; 
+    color: #123; 
+
+    transition: background-color 0.2s; 
+    
+    --border: 2rem dashed #123; 
+    border-top: var(--border); 
+    border-bottom: var(--border); 
+}
+
+div span {
+    display: block; 
+
+    color: #888; 
+}
+
+.dragover {
+    background-color: #000; 
+}
